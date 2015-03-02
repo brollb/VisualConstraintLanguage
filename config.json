@@ -1,10 +1,12 @@
 {
-    "debug": true,
+    "debug": false,
     "port": 8080,
 
     "mongoip": "127.0.0.1",
     "mongoport": 27017,
     "mongodatabase": "multi",
 
-    "pluginBasePaths": ["./plugins"]
+    "pluginBasePaths": ["./plugins"],
+    "visualizerDescriptors": ["./Visualizers.json"],
+    "storageKeyType": ["rand160Bits"]
 }
