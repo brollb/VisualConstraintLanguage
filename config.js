@@ -2,7 +2,7 @@
 // It has been created for this to be used with the webgme-cli
 'use strict';
 
-var config = {};/*FIXME: Fix this rather than using it as a mock
+var config = {plugin: {basePaths: []}};/*FIXME: Fix this rather than using it as a mock
     require('webgme/config/config.webgme.js'),*/
     //validateConfig = require('webgme/config/validator');
 
