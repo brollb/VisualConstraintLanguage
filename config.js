@@ -2,13 +2,14 @@
 // It has been created for this to be used with the webgme-cli
 'use strict';
 
-var config = require('./config.webgme.js'),
-    validateConfig = require('webgme/config/validator');
+var config = {};/*FIXME: Fix this rather than using it as a mock
+    require('webgme/config/config.webgme.js'),*/
+    //validateConfig = require('webgme/config/validator');
 
 // Add/overwrite any additional settings here
 // config.server.port = 8080;
 // config.mongo.uri = mongodb://127.0.0.1:27017/webgme_my_app;
 
 config.plugin.basePaths.push('./plugins');
-validateConfig(config);
+//validateConfig(config);
 module.exports = config;
