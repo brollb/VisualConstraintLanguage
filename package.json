@@ -1,11 +1,11 @@
 {
-  "name": "VisualConstraintLanguage",
+  "name": "code",
   "version": "1.0.0",
   "description": "Visual programming language for writing constraints in the WebGME.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/mocha/bin/mocha --recursive test"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,11 @@
   },
   "homepage": "https://github.com/brollb/VisualConstraintLanguage",
   "dependencies": {
-    "webgme": "^0.7.1"
+    "webgme": "^1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "rimraf": "^2.4.0",
+    "chai": "^3.0.0"
   }
 }

@@ -1,9 +1,13 @@
-/*globals WebGMEGlobal*/
-var config = require('./config.json'),
+// jshint node: true
+'use strict';
+
+var gmeConfig = require('./config'),
     webgme = require('webgme'),
-    server;
+    myServer;
 
-WebGMEGlobal.setConfig(config);
+webgme.addToRequireJsPaths(gmeConfig);
 
-server = new webgme.standaloneServer();
-server.start();
+myServer = new webgme.standaloneServer(gmeConfig);
+myServer.start(function () {
+    //console.log('server up');
+});

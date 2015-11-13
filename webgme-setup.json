@@ -1,0 +1,23 @@
+{
+  "components": {
+    "plugins": {
+      "CodeGenerator": {
+        "src": "src/plugins/CodeGenerator",
+        "test": "test/plugins/CodeGenerator"
+      },
+      "ConstraintPlugin": {
+        "src": "src/plugins/ConstraintPlugin",
+        "test": "test/plugins/ConstraintPlugin"
+      }
+    },
+    "seeds": {
+      "VisualConstraintLanguage": {
+        "src": "src/seeds/VisualConstraintLanguage"
+      }
+    }
+  },
+  "dependencies": {
+    "plugins": {},
+    "seeds": {}
+  }
+}
